@@ -1,0 +1,21 @@
+{
+  "name": "Niloy Saha — Data Analyst Portfolio",
+  "short_name": "Niloy Saha",
+  "description": "Data Analyst specializing in SQL, Power BI, Python, and Excel",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05060f",
+  "theme_color": "#6c63ff",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
