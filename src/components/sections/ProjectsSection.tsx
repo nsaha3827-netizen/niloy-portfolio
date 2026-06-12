@@ -2,10 +2,10 @@
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import Image from "next/image";
-import { Github, ExternalLink, Sparkles } from "lucide-react";
+import {ExternalLink, Sparkles } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { PROJECTS, PROJECT_CATEGORIES } from "@/lib/data";
-
+import { FaGithub } from "react-icons/fa";
 function ProjectCard({
   project,
   delay,
@@ -77,7 +77,7 @@ function ProjectCard({
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-2 rounded-lg glass border border-[#1e2240] text-xs text-[#9196b5] hover:text-[#8b85ff] hover:border-[#6c63ff]/40 transition-all duration-200 flex-1 justify-center"
           >
-            <Github size={13} />
+            <FaGithub size={13} />
             GitHub
           </a>
           {project.demo ? (

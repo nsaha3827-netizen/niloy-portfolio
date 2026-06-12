@@ -1,5 +1,4 @@
 import { Heart } from "lucide-react";
-
 export function Footer() {
   return (
     <footer className="border-t border-[#1e2240] bg-[#05060f]">

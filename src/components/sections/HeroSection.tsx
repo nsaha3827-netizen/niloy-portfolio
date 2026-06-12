@@ -1,17 +1,22 @@
 "use client";
 import { motion } from "framer-motion";
-import { Download, Eye, Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Download, Eye,Mail, ChevronDown } from "lucide-react";
 import { useTypingEffect } from "@/hooks/useTypingEffect";
 import { PERSONAL } from "@/lib/data";
 import { DataVisualizationScene } from "@/components/three/DataVisualizationScene";
-
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  show: (i: number) => ({
+  hidden: {
+    opacity: 0,
+    y: 30,
+  },
+  show: {
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.12, duration: 0.6, ease: [0.25, 1, 0.5, 1] },
-  }),
+    transition: {
+      duration: 0.6,
+    },
+  },
 };
 
 export function HeroSection() {
@@ -38,7 +43,7 @@ export function HeroSection() {
       <div className="relative z-10 section-container text-center pt-24 pb-16">
         {/* Availability badge */}
         <motion.div
-          custom={0}
+          custom={0}  
           initial="hidden"
           animate="show"
           variants={fadeUp}
@@ -121,8 +126,8 @@ export function HeroSection() {
           className="flex items-center justify-center gap-4"
         >
           {[
-            { href: PERSONAL.github, icon: Github, label: "GitHub" },
-            { href: PERSONAL.linkedin, icon: Linkedin, label: "LinkedIn" },
+            { href: PERSONAL.github, icon: FaGithub, label: "GitHub" },
+            { href: PERSONAL.linkedin, icon: FaLinkedin, label: "LinkedIn" },
             { href: `mailto:${PERSONAL.email}`, icon: Mail, label: "Email" },
           ].map(({ href, icon: Icon, label }) => (
             <a

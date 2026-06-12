@@ -1,7 +1,7 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Github, Linkedin, Mail, MapPin, Send } from "lucide-react";
+import {Mail, MapPin, Send } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { PERSONAL } from "@/lib/data";
 
@@ -15,7 +15,7 @@ const CONTACT_CARDS = [
     cta: "Send a message",
   },
   {
-    icon: Linkedin,
+    icon: Mail,
     label: "LinkedIn",
     value: "niloysaha-analyst",
     href: PERSONAL.linkedin,
@@ -23,7 +23,7 @@ const CONTACT_CARDS = [
     cta: "Connect on LinkedIn",
   },
   {
-    icon: Github,
+    icon: Mail,
     label: "GitHub",
     value: "nsaha3827-netizen",
     href: PERSONAL.github,
@@ -31,7 +31,6 @@ const CONTACT_CARDS = [
     cta: "View repositories",
   },
 ];
-
 export function ContactSection() {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
