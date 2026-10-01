@@ -35,7 +35,7 @@ export default function Domain() {
   return (
     <section
       id="expertise"
-      className="py-24 bg-black text-white px-6"
+      className="py-24 bg-black/70 text-white px-6"
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-16">

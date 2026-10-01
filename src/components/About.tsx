@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-24 px-6 bg-black text-white flex justify-center"
+      className="py-24 px-6 bg-black/70 text-white flex justify-center"
     >
       <motion.div
         className="max-w-5xl w-full"

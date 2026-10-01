@@ -7,6 +7,8 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Domain from "@/components/Domain";
 import Expertise from "@/components/Experience";
+import Certificates from "@/components/Certificates";
+import LinkedIn from "@/components/LinkedIn";
 export default function Home() {
   return (
     <>
@@ -17,6 +19,8 @@ export default function Home() {
       <Expertise />
       <Skills />
       <Projects />
+      <Certificates />
+      <LinkedIn />
       <Contact />
       <Footer />
     </>

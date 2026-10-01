@@ -28,3 +28,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* Global portfolio background */
+body {
+  background-color: #020617;
+  background-image: url("/a_vertical_dark_futuristic_abstract_data_technology.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
